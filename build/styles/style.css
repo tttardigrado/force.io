@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+    --margin: 28px;
+    --tab-size: 28px;
+    --light: #88c0d0;
+    --bg-light: #3b4252;
+    --bg-dark: #2e3440;
+    --white: #e4e8ef;
+    --middle: #353c4a;
+    --yellow: #ecbe7b;
+    --red: #be616a;
+    --green: #a3be8c;
+
+
+    --dark-1: #2e3440;
+    --dark-2: #3b4252;
+    --dark-3: #434c5e;
+    --dark-4: #0e0400;
+
+    --light-1: #d8dee9;
+    --light-2: #e5e9f0;
+    --light-3: #eceff4;
+
+    --frost-1: #8fbcbb;
+    --frost-2: #88c0d0;
+    --frost-3: #81a1c1;
+    --frost-4: #5e81ac;
+
+    --red: #bf616a;
+    --orange: #d08770;
+    --yellow: #ebcb8b;
+    --green: #a3be8c;
+    --pink: #b48ead;
+
+}
+
+* {
+    border: none;
+    padding: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--bg-dark) ;
+    color: var(--frost-2);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+main {
+    margin: auto;
+    margin-top: calc(var(--margin) * 2);
+    max-width: 800px;
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+    padding-bottom: calc(var(--margin)*2);
+}
+
+
+h1,h2,h3 {
+    color: var(--green);
+}
+
+
+h1::before {
+    content: "# ";
+}
+
+h2::before {
+    content: "## ";
+}
+
+h3::before {
+    content: "### ";
+}
+
+strong {
+    color: var(--light-1);
+}
+
+em {
+    color: var(--yellow);
+}
+
+a {
+    text-decoration: none;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+
+a::before{
+    content: "🔗 ❰";
+}
+
+a::after{
+    content: "❱";
+}
+
+
+li{
+    list-style-type: "▸ ";
+    color: var(--frost-3);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+sup {
+    color: var(--pink);
+    cursor: pointer;
+}
+
+blockquote, pre {
+    background-color: var(--middle);
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 1rem auto;
+    position: relative;
+
+}
+
+blockquote::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.5rem;
+    height: 100%;
+    background-color: var(--frost-2);
+}
+
+pre{
+    overflow: auto;
+}
+
+pre::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.5rem;
+    height: 100%;
+    background-color: var(--green);
+}
+
+
+img {
+    width: 80%;
+    border: 0.35rem solid var(--pink);
+    margin: 1rem 10%;
+}
+
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: var(--frost-2) ;
+    margin: 1rem auto;
+}
+
+.bg-img {
+    user-select: none;
+    width: 70%;
+    max-width: 600px;
+    border: none;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 100vw;
+    transform: translate(-50%,-50%);
+    -webkit-animation:rotate 20s linear 0s infinite normal;
+    -moz-animation:rotate 20s linear 0s infinite normal;
+    -ms-animation:rotate 20s linear 0s infinite normal;
+    animation:rotate 100s linear 0s infinite normal;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+    
+@-webkit-keyframes rotate {
+    0%{
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        -webkit-transform: translate(-50%,-50%) rotate(360deg);
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: translate(-50%,-50%)
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg); 
+    }
+}
+    
+
+
+.posts li{
+    list-style-type: none;
+    color: var(--frost-3);
+}
+
+details li {
+    list-style-type: none;
+    color: var(--frost-2);
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+details {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+details li a::before {
+    content: "📝 ";
+}
+
+details li a::after {
+  content: " ";
+}
+
+sup a::before, sup a::after, .footnote-backref::before, .footnote-backref::after{
+  content: " ";
+}

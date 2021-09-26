@@ -1,0 +1,19 @@
+{
+  "Music": [
+    {
+      "name": "Playlists",
+      "posts": [
+        "playlists/soft_english_rap.md",
+        "playlists/lets_rock.md"
+      ]
+    }
+  ],
+  "Art": [
+    {
+      "name": "Generative Art",
+      "posts": [
+        "art/neon_window.md"
+      ]
+    }
+  ]
+}

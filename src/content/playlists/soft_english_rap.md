@@ -1,0 +1,18 @@
+# 🥓 English Breakfast
+
+1. [Xperadó - Verbal Reality](https://www.youtube.com/watch?v=yVEKIz-w-lQ&list=WL&index=89)
+2. [Ab-Soul & Kendrick Lamar - Turn Me Up](https://www.youtube.com/watch?v=gNaZ-uFHjRk&list=WL&index=81)
+3. [PRO ERA - Interlude 47 ](https://www.youtube.com/watch?v=8eRrR4X-Cjw&list=WL&index=86)
+4. [Mad Vibes - Riches To Rags](https://www.youtube.com/watch?v=8Sfgm1MxqT0&list=WL&index=88)
+5. [ODDISEE - Own Appeal](https://www.youtube.com/watch?v=E2Snh2NZHhk)
+6. [Anti-Lilly & Phoniks - It's Nice Outside](https://www.youtube.com/watch?v=qilQU2h_RiY)
+7. [Caleborate - 4 Willem](https://www.youtube.com/watch?v=8dHAWTzD5SE)
+8. [Kendrick Lamar - How Much A Dollar Cost](https://www.youtube.com/watch?v=y8kEiL81_R4)
+9. [DeAngelo Xavier - Newtown](https://www.youtube.com/watch?v=w2GqI87CfHU&list=WL&index=61)
+10. [Evidence - Pardon Me](https://www.youtube.com/watch?v=Hh8WTPnL-y8)
+11. [Gavlyn & DJ Hoppa - Headspace](https://www.youtube.com/watch?v=7Pkjnudsbng)
+12. [Logic - 44 Bars](https://www.youtube.com/watch?v=anI5b2PEmdA)
+13. [Clear Soul Forces - Get No Better](https://www.youtube.com/watch?v=BWKLuwR_bFw)
+14. [S.E.E.L. - Realism](https://www.youtube.com/watch?v=l2BNhwDwCEQ)
+15. [Bishop Nehru - Driftin'](https://www.youtube.com/watch?v=z5Z9Rm5z4qQ)
+16. [Dillon Cooper - Everyday Life](https://www.youtube.com/watch?v=U_24tGX4Z7E)

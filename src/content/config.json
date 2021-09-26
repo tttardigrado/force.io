@@ -1,0 +1,11 @@
+{
+  "music": [
+    {
+      "name": "Playlists",
+      "posts": [
+        "playlists/soft_english_rap.md",
+        "playlists/lets_rock.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+.life-line {
+    position: fixed;
+    background-color: var(--bg-dark);
+    bottom: 0px;
+    left: var(--margin);
+    width: calc(100vw - var(--margin)*2);
+    height: calc(var(--margin)*3);
+    z-index: 10;
+}
+
+.life-line .line{
+    user-select: none;
+    position: fixed;
+    background-color: var(--bg-light);
+    bottom: var(--margin);
+    left: var(--margin);
+    width: calc(100vw - var(--margin)*2);
+    height: var(--margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+}
+
+.life-line .life-line-color {
+    display: inline-block;
+    width: 1rem;
+    height: var(--margin);
+    background-color: var(--light);
+    margin-right: var(--margin);
+    color: var(--light);
+}
+
+.life-line .life-line-start {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.life-line .life-line-symbols {
+    margin-right: 1rem;
+    letter-spacing: 1rem;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    max-width: 200px;
+}

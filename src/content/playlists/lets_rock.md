@@ -1,0 +1,16 @@
+# 🎸 Let's Rock
+
+1. [Kyra - Persas](https://www.youtube.com/watch?v=8bmnJzM7Tno)
+2. [Tayob J. & Fizz Escobarra - Mad Thing](https://www.youtube.com/watch?v=aZLkJQbO4t0&list=PLafhs2h7HkPoMVGtQbqf6ju8Yaat5Nn_x&index=16)
+3. [Papillon - Impasse](https://www.youtube.com/watch?v=VhXSyiXtyRA)
+4. [OSSO - Amanhã](https://www.youtube.com/watch?v=QjpqmLjEHYw)
+5. [João Tamura & Beiro - Bixho](https://www.youtube.com/watch?v=Oj8d8MuQDVU&list=PLafhs2h7HkPoMVGtQbqf6ju8Yaat5Nn_x&index=30)
+6. [Decifra & Abyss- Parecia mais Fácil](https://www.youtube.com/watch?v=cAp9ZGSyPfw)
+7. [OSSO - Isolado](https://www.youtube.com/watch?v=RTY-0I8d8ek)
+8. [OSSO - Portugal Velho](https://www.youtube.com/watch?v=MolezavKtFk)
+9. [Allen Halloween – Na Porta do Bar](https://www.youtube.com/watch?v=iLjsGbG8A7Q)
+10. [Valete - Rap Consciente](https://www.youtube.com/watch?v=nB7FGhP9-L4)
+11. [Deau & Expeão - Andorinha](https://www.youtube.com/watch?v=w48R77teKVs)
+12. [NBC & Sir Scratch - Espelho](https://www.youtube.com/watch?v=kQgUiq-ZFLs)
+13. [Nerve & Orelha Negra- 961919169](https://www.youtube.com/watch?v=tpORg2omlwk)
+14. [Expeão - Poeta Falhado](https://www.youtube.com/watch?v=PoV1HQSj3wc)
