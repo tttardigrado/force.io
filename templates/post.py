@@ -23,6 +23,7 @@ def post_template(name: str, content: str, ext: str = "py") -> str:
     <link rel="stylesheet" href="/styles/lifeline.css">
     <link rel="stylesheet" href="/styles/topbar.css">
     <title>{name}</title>
+    <base target="_blank">
 </head>
 <body>
     <div class="top">

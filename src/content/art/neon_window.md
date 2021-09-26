@@ -5,7 +5,7 @@ A **window** to another world where **neon** is the normal.
 This piece of art was created as a experiment on simplicity.
 
 * **Language**: *JavaScript*
-* **Libraries**: *P5.js*[^1]
+* **Libraries**: *P5.js* <sup>[1]</sup>
 * **Color Schemes**: *Nord*, *Gruvbox*, *Dracula*
 
 ----------
@@ -50,5 +50,6 @@ This piece of art was created as a experiment on simplicity.
 
 ![Neon 10](/assets/window/n10.png)
 
+----------
 
-[^1]: [P5.js](https://p5js.org/)
+*[1]*: [P5.js](https://p5js.org/)
