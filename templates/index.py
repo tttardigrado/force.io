@@ -37,7 +37,7 @@ def index_template(posts: str) -> str:
 </head>
 <body>
     <div class="top">
-        <div class="top-txt" ><a href="/index.html">Force</a></div>
+        <div class="top-txt" ><a href="/index.html" target="_self" >Force</a></div>
         <div class="top-bar">
             <span class="top-btn min"></span>
             <span class="top-btn max"></span>
