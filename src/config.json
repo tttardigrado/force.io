@@ -4,7 +4,8 @@
       "name": "Playlists",
       "posts": [
         "playlists/english_breakfast.md",
-        "playlists/lets_rock.md"
+        "playlists/lets_rock.md",
+        "playlists/softer.md"
       ]
     }
   ],
@@ -12,7 +13,8 @@
     {
       "name": "Generative Art",
       "posts": [
-        "art/neon_window.md"
+        "art/neon_window.md",
+        "art/focus.md"
       ]
     }
   ]

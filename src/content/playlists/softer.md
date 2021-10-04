@@ -1,0 +1,17 @@
+# 🥤 Softer
+
+1. [Scorp - Diamantes](https://www.youtube.com/watch?v=LESk3QyVv6k)
+2. [Damaz - Páginas Soltas](https://www.youtube.com/watch?v=XSWlfRqCDOc)
+3. [Kyra X Damz - Relógio de cuco](https://www.youtube.com/watch?v=7VdnSopgndY)
+4. [Subito - Desafogo](https://www.youtube.com/watch?v=Iw9n34MuAz4&t=43s)
+5. [Fado de Rua - Um tempo para mim](https://www.youtube.com/watch?v=dLKyfR3dJ84)
+6. [AVAN GRA - SOMOS TÃO JOVENS SABEMOS POUCO](https://www.youtube.com/watch?v=Do9sqyuXm6c)
+7. [Cultus - Glória](https://www.youtube.com/watch?v=jr0TXqxW-So)
+8. [MURA - MENSAGEM](https://www.youtube.com/watch?v=zcwdZbDDBNY)
+9. [SUBTIL - TRAJETÓRIA](https://www.youtube.com/watch?v=XQFbcy5BCC8)
+10. [xtinto - Marfim](https://www.youtube.com/watch?v=jdp3oQuHbUY)
+11. [BISPO - Dinâmico](https://www.youtube.com/watch?v=A9V9QBOE1MY&list=RDjdp3oQuHbUY&index=31)
+12. [No 1 X Vando Streets X Dillaz - A carta](https://www.youtube.com/watch?v=5XFR_RNq_7Y&list=RDjdp3oQuHbUY&index=35)
+13. [Mind da Gap - És onde quero estar](https://www.youtube.com/watch?v=3_WgRkRS5Vg&list=RDjdp3oQuHbUY&index=28)
+14. [Crewella - Ainda é longe](https://www.youtube.com/watch?v=rxusBauXhUg)
+15. [Rwella - Didascália](https://www.youtube.com/watch?v=UVq2nJcTjUk)
