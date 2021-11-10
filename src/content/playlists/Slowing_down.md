@@ -1,0 +1,17 @@
+# 🦥 Slowing Down
+
+1. [Rato54 & Ace - Às vezes](https://www.youtube.com/watch?v=rW585D10SuM&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=1)
+2. [ORTEUM - Cordas](https://www.youtube.com/watch?v=Tge0E8XXWPs&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=2)
+3. [ORTEUM - Flashback](https://www.youtube.com/watch?v=rN8FHk8gM0o&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=3)
+4. [PRAGA.M1K & VICIS & SPECTRUM- MEU JARDIM](https://www.youtube.com/watch?v=shl6zO-no30&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=4)
+5. [PURO L- Sete em Ponto](https://www.youtube.com/watch?v=_lrA9AQ2doE&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=5)
+6. [Pipes - Voz da Rua](https://www.youtube.com/watch?v=aDvYqYzKqec&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=6)
+7. [SPECTRUM - SEM CORRESPONDÊNCIA](https://www.youtube.com/watch?v=07clu1p5wl8&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=7)
+8. [CLASSE CRUA - TREINAR PARA SER UM MILIONÁRIO](https://www.youtube.com/watch?v=6INcvHahuBM&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=8)
+9. [Sacik Brow - Historias Que Marcam](https://www.youtube.com/watch?v=l7GcKLIhbeQ&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=9)
+10. [PRAGA.M1K - ENSAIO SOBRE A ESSÊNCIA](https://www.youtube.com/watch?v=j5-viQd8SZM&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=10)
+11. [FERRY - O REI DO BAIRRO](https://www.youtube.com/watch?v=moJbCXOqCCo&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=11)
+12. [Cálculo & Simple - DUALIDADE](https://www.youtube.com/watch?v=N2VQCB0-Als&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=13)
+13. [Alpha - Heróis do Mar](https://www.youtube.com/watch?v=OTwGtduRHGU&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=13)
+14. [GROGNation - Distante](https://www.youtube.com/watch?v=vwZoyoxL9eo&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=14)
+15. [SnackTRD - Voa Borboleta, Voa](https://www.youtube.com/watch?v=IH859y4qpK8&list=PLGkYSKcnBOOC3oAFrrbRb4-CC_7xa2bzU&index=15)
