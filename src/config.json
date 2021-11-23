@@ -21,5 +21,15 @@
         "art/focus.md"
       ]
     }
+  ],
+  "Poetry": [
+    {
+      "name": "Poetry",
+      "posts": [
+        "poetry/palavras.md",
+        "poetry/vivo_ou_morto.md"
+      ]
+    }
   ]
+
 }
