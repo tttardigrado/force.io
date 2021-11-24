@@ -14,7 +14,7 @@ Contudo, sinto que algo me **rodeia.**
 
 Talvez chuva que a roupa não **permeia,**
 
-O calor de memórias a **lareira,**
+O calor de memórias à **lareira,**
 
 Ou apenas palavras **dolorosas.**
 
