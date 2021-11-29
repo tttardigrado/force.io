@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/post.css">
+    <link rel="stylesheet" href="/styles/lifeline.css">
+    <link rel="stylesheet" href="/styles/topbar.css">
+    <title>Shell</title>
+    <base target="_blank">
+</head>
+<body>
+    <div class="top">
+        <div class="top-txt" ><a href="/index.html" target="_self">Force</a></div>
+        <div class="top-bar">
+            <span class="top-btn min"></span>
+            <span class="top-btn max"></span>
+            <span class="top-btn close"></span>
+        </div>
+    </div>
+    <main>
+        <h1 id="-shell">🐚 Shell</h1>
+<p><strong>Shell</strong> is a piece of generative art that i made while trying <em>sizecoding</em> <sup>[1]</sup> (actually it's more like twitter coding <sup>[2]</sup>)</p>
+<ul>
+<li><strong>Language</strong>: <em>JavaScript</em></li>
+<li><strong>Libraries</strong>: <em>P5.js</em> <sup>[3]</sup></li>
+</ul>
+<hr />
+<p><img src="/assets/shell/1.png" alt="Shell 1" /></p>
+<p><img src="/assets/shell/2.png" alt="Shell 2" /></p>
+<p><img src="/assets/shell/3.png" alt="Shell 3" /></p>
+<p><img src="/assets/shell/4.png" alt="Shell 4" /></p>
+<p><img src="/assets/shell/5.png" alt="Shell 5" /></p>
+<p><img src="/assets/shell/6.png" alt="Shell 6" /></p>
+<p><img src="/assets/shell/7.png" alt="Shell 7" /></p>
+<p><img src="/assets/shell/8.png" alt="Shell 8" /></p>
+<p><img src="/assets/shell/carbon.png" alt="Shell Code 1" /></p>
+<p><img src="/assets/shell/c2.png" alt="Shell Code 2" /></p>
+<hr />
+<p>Code:</p>
+<pre><code class="language-js">function setup() {
+  let w = 700
+  createCanvas(w, w)
+  background(0)
+
+  let r = random
+
+  push()
+  translate(w / 2, w / 2)
+
+  let s = r(50, 250)
+  let p = r(8, 13)
+
+  for (let i = p; i &lt; w * 2; i += p) {
+    stroke(i % s, 240)
+    fill(0, 2)
+    ellipse(0, 0, i, i * 2)
+    rotate(0.1)
+  }
+  pop()
+
+  fill(r(30, 250), r(30, 250), r(30, 250), r(50, 80))
+  rect(0, 0, w, w)
+}
+
+// Minified
+function setup(){
+
+    for(w=700,createCanvas(w,w),push(),translate(w/2,w/2),background(0),r=random,s=r(50,250),p=r(8,13),i=p;i&lt;2*w;i+=p)stroke(i%s,240),fill(0,2),ellipse(0,0,i,2*i),rotate(.1);pop(),fill(r(30,250),r(30,250),r(30,250),r(50,80)),rect(0,0,w,w)
+
+} // 234 bytes 
+</code></pre>
+<br>
+-----
+<br>
+<p><em>[1]</em>: <a href="http://www.sizecoding.org/wiki/Main_Page">Size Coding</a></p>
+<p><em>[2]</em>: Writing code snippets that fit inside twitter's character limit (280)</p>
+<p><em>[3]</em>: <a href="https://p5js.org/">P5.js</a></p>
+
+    </main>
+
+    <div class="life-line">
+        <div class="line">
+            <span class="life-line-start">
+                <span class="life-line-color">█</span>
+                Shell.jl
+            </span>
+
+        </div>
+    </div>
+</body>
+</html>
