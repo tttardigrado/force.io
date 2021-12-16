@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/post.css">
+    <link rel="stylesheet" href="/styles/lifeline.css">
+    <link rel="stylesheet" href="/styles/topbar.css">
+    <title>Etude_about_feeling</title>
+    <base target="_blank">
+</head>
+<body>
+    <div class="top">
+        <div class="top-txt" ><a href="/index.html" target="_self">Force</a></div>
+        <div class="top-bar">
+            <span class="top-btn min"></span>
+            <span class="top-btn max"></span>
+            <span class="top-btn close"></span>
+        </div>
+    </div>
+    <main>
+        <h1 id="étude-about-feeling">Étude about feeling</h1>
+<p>Era uma noite normal, estava cansado, mas não queria dormir. Decidi abrir o <em>youtube</em> e descobri um vídeo sobre a melhor forma de selecionar um ponto dentro de um <strong>círculo</strong> <sup>[1]</sup>.</p>
+<p>Então comecei a pensar em qual seria a melhor forma de <strong>preencher um círculo</strong>, e aqui mostro o resultado.</p>
+<ul>
+<li><strong>Language</strong>: <em>JavaScript</em></li>
+<li><strong>Libraries</strong>: <em>P5.js</em> <sup>[2]</sup></li>
+</ul>
+<p><br></br></p>
+<hr />
+<h2 id="linhas">Linhas</h2>
+<p>A primeira tentativa foi escolher dois pontos aleatórios na circunferência e unir os mesmos através de uma linha reta. Os pontos são selecionados através dos ângulos, tal que <em>a ∈ [0,2π]</em>, ou seja, o ângulo está em <em>radianos</em> <sup>[3]</sup>, e as coordenadas finais serão obtidas através da utilização de <em>coordenadas polares</em><sup>[4]</sup></p>
+<pre><code class="language-js">function lines(){
+  let a = random(2*PI)
+  let b = random(2*PI)
+  
+  line(r*cos(a),r*sin(a), r*cos(b), r*sin(b))
+}
+</code></pre>
+<p><img src="/assets/etude/lines.png" alt="Lines 1" /></p>
+<p><br></br></p>
+<p>A segunda tentativa consistiu em escolher pontos, desta vez não necessáriamente pertencentes à circunferência, e unir
+os mesmo através de retas. Para escolher cada ponto, selecionei um ângulo tal que  <em>a ∈ [0,2π]</em> e um raio tal que <em>r₂ ∈ [0,r]</em></p>
+<pre><code class="language-js">function lines2(){  
+  let a = random(2*PI)
+  let b = random(2*PI)
+  
+  let r1 = random(r)
+  let r2 = random(r)
+  
+  line(r1*cos(a), r1*sin(a), r2*cos(b), r2*sin(b))
+}
+</code></pre>
+<p><img src="/assets/etude/lines2.png" alt="Lines 2" /></p>
+<p><br></br></p>
+<p>De seguida, apenas alterei a forma como os raios dos pontos são selecionados, utilizando uma função random diferente <strong>rand</strong> <sup>[5]</sup>.</p>
+<pre><code class="language-js">function lines3(){
+  let a = random(2*PI)
+  let b = random(2*PI)
+  
+  let r1 = rand(r)
+  let r2 = rand(r)
+  
+  line(r1*cos(a), r1*sin(a), r2*cos(b), r2*sin(b))
+}
+</code></pre>
+<p><img src="/assets/etude/lines3.png" alt="Lines 3" /></p>
+<p><br></br></p>
+<h2 id="círculos">Círculos</h2>
+<p>Para os antigos, Círculos eram perfeitos, então, porque não tentar preencher um círculo com outros círculos?</p>
+<p>A primeira versão, começa por rodar a tela num ângulo aleatório a, tal que <em>a ∈ [0,2π]</em>. De seguida, escolhe um raio rr tal que <em>rr ∈ [0,r]</em> e desenha um círculo tangente à circunferência original ou seja, com centro nas coordenadas <em>(r-rr, 0)</em> e raio <em>rr</em>, mas devemos nos lembrar que aplicamos previamente um raotação de ângulo <em>a</em>.</p>
+<pre><code class="language-js">function circs(){
+    push()
+      rotate(random(2*PI))
+      let rr = random(r)
+  
+      circle(r-rr,0,rr)
+    pop()
+}
+</code></pre>
+<p><img src="/assets/etude/circs.png" alt="Circles 1" /></p>
+<p><br></br></p>
+<p>A segunda versão, segue o mesmo princípio da primeira, apenas alterando a forma como escolhe o raio<sup>[5]</sup>.</p>
+<pre><code class="language-js">function circs2(){
+    push()
+      rotate(random(2*PI))
+      let rr = rand(r)
+  
+      circle(r-rr,0,rr)
+    pop()
+}
+</code></pre>
+<p><img src="/assets/etude/circs2.png" alt="Circles 2" /></p>
+<p><br></br></p>
+<h2 id="pontos">Pontos</h2>
+<p>O terceiro método baseia-se em desenhar pontos dentro do círculo.</p>
+<p>A primeira versão escolhe um <strong>ângulo a</strong> e um <strong>raio rr</strong>, e através de coordenadas polares desenha esse ponto.</p>
+<pre><code class="language-js">function dots(n){
+    let a = random(2*PI)
+    let rr = random(r)
+    
+    point(rr*cos(a),rr*sin(a))
+}
+</code></pre>
+<p><img src="/assets/etude/dots.png" alt="Dots 1" /></p>
+<p><br></br></p>
+<p>A segunda versão escolhe um <strong>ângulo a</strong>, mas a função que seleciona o raio é <strong>rand</strong> <sup>[5]</sup>.</p>
+<pre><code class="language-js">function dots2(n){
+    let a = random(2*PI)
+    let rr = rand(r)
+    point(rr*cos(a),rr*sin(a))
+}
+</code></pre>
+<p><img src="/assets/etude/dots3.png" alt="Dots 2" /></p>
+<p><br></br></p>
+<p>Por fim, são selecionadas <em>duas coordenadas, x e y</em>, tal que <em>x, y ∈ [-r,r]</em>.
+Este método tem o problema de alguns dos possíveis pontos não estarem contidos no círculo, pelo que utilizei o <em>teorema de pitágoras</em>, para saber se a distância entre este ponto e o centro era menor ou igual que o raio <em>(x² + y² ≤ r²)</em>. No caso do ponto não estar contido, a função seria repetida, até que o ponto selecionado estivesse contido no círculo.</p>
+<pre><code class="language-js">function dots3(){
+  while(true){
+    let x = random(-r,r)
+    let y = random(-r,r)
+    
+    if (x*x + y*y &lt;= r*r){
+      point(x,y)
+      return
+    }
+  }
+}
+</code></pre>
+<p><img src="/assets/etude/dots2.png" alt="Dots 3" /></p>
+<p><br></br></p>
+<hr />
+<p><em>[1]</em>: <a href="https://www.youtube.com/watch?v=4y_nmpv-9lI&amp;t=166s">Vídeo</a></p>
+<p><em>[2]</em>: <a href="https://p5js.org/">P5.js</a></p>
+<p><em>[3]</em>: <a href="https://upchieve.org/blog/2021/4/18/what-are-radians">Radianos</a></p>
+<p><em>[4]</em>: <a href="https://tutorial.math.lamar.edu/Classes/CalcII/PolarCoordinates.aspx">Coordenadas polares</a> são um sistema de coordenadas, onde, em vez de duas coordenadas <em>x</em> e <em>y</em> temos uma coordenada <em>r (distância à origem)</em> e uma coordenada <em>φ (ângulo feito com o semi-eixo positivo Ox)</em>. Este tipo de coordenadas facilida o estudo de movimentos circulares por exemplo e a conversão entre coordenadas polares e cartezianas pode ser feita da seguinte forma:</p>
+<ul>
+<li>
+<p>Polares → Cartezianas:</p>
+<ul>
+<li><em>x = r · cos(φ)</em></li>
+<li><em>y = r · sin(φ)</em></li>
+</ul>
+</li>
+<li>
+<p>Cartezianas → Polares:</p>
+<ul>
+<li><em>r = √(x² + y²)</em></li>
+<li><em>φ =</em>
+<ul>
+<li><em>arctan(y/x) if x &gt; 0</em></li>
+<li><em>arctan(π + y/x) if x &lt; 0</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><em>[5]</em>: a função rand foi definida por mim da seguinte forma:</p>
+<pre><code class="language-js">function rand(m){
+  return sqrt(random(m) * random(m))
+}
+</code></pre>
+<p>Ou seja, utilizando <strong>√(m₁+m₂)</strong>, onde m₁ e m₂ são números aleatórios tal que: <strong>m₁,m₂ ∈ [0,m]</strong></p>
+
+    </main>
+
+    <div class="life-line">
+        <div class="line">
+            <span class="life-line-start">
+                <span class="life-line-color">█</span>
+                Etude_about_feeling.jl
+            </span>
+
+        </div>
+    </div>
+</body>
+</html>
