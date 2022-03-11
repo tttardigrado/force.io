@@ -1,4 +1,4 @@
-# Vivo ou Morto
+# 🧟️‍️♂️ Vivo ou Morto
 
 Enquanto  *vivo* sinto me **morto** por dentro
 

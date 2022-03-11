@@ -1,4 +1,4 @@
-# Palavras
+# 🇼 Palavras
 
 Deambulo pelas ruas em **vão!**
 

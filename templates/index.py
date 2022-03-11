@@ -37,7 +37,7 @@ def index_template(posts: str) -> str:
 </head>
 <body>
     <div class="top">
-        <div class="top-txt" ><a href="/index.html" target="_self" >Force</a></div>
+        <div class="top-txt" ><a href="/index.html" target="_self" >Tardigrade</a></div>
         <div class="top-bar">
             <span class="top-btn min"></span>
             <span class="top-btn max"></span>
@@ -48,15 +48,15 @@ def index_template(posts: str) -> str:
     <img class="bg-img" src="assets/bg.png">
 
     <main>
-        <h1>Force's World</h1>
+        <h1>Tardigrade's World</h1>
         <hr>
         <h2>Who Am I?</h2>
         <div class="who">
             <p>Hi! 🖖</p>
-            <p>My name is <em>Gonçalo Teixeira</em>, also known around the corners of the web as <strong>Force</strong> </p>
+            <p>My name is <em>Gonçalo Teixeira</em>, also known around the corners of the web as <strong>Tardigrade</strong> </p>
             <p>I'm a Portuguese <strong>🪐 physics</strong> student at <em>Universidade do Porto</em></p>
             <p>This is my personal website where you will be able to find a lot of posts about what I enjoy doing.</p>
-            <p>My interests range from <strong>💻 Coding</strong>, <strong>🪐 Science</strong>, <strong>🎶 Music</strong>, <strong>📚 Sci-fi</strong> and <strong>🎲 Retro Gaming</strong></p>
+            <p>My interests range from <strong>💻 Computer Science</strong>, <strong>🎶 Music</strong>, <strong>🪐 Sci-fi</strong> and <strong>📚 Debates</strong></p>
 
         </div>
         <hr>
@@ -70,22 +70,13 @@ def index_template(posts: str) -> str:
         <p><a href="https://soundcloud.com/g-force-beats" target="_blank"> 🎶 SoundCloud</a></p>
         <p><a href="https://github.com/Force4760" target="_blank"> 💻 GitHub</a></p>
         <hr>
-        <pre>
-
- ███████╗ ██████╗ ██████╗  ██████╗███████╗
- ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝
- █████╗  ██║   ██║██████╔╝██║     █████╗
- ██╔══╝  ██║   ██║██╔══██╗██║     ██╔══╝
- ██║     ╚██████╔╝██║  ██║╚██████╗███████╗
- ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝
-        </pre>
     </main>
 
     <div class="life-line">
         <div class="line">
             <span class="life-line-start">
                 <span class="life-line-color">█</span>
-                force.py
+                tardigrade.py
             </span>
         </div>
     </div>

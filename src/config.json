@@ -20,17 +20,19 @@
         "art/neon_window.md",
         "art/focus.md",
         "art/shell.md",
-        "art/etude_about_feeling.md"
+        "art/etude_about_feeling.md",
+        "art/broken_glass.md"
       ]
     }
   ],
   "Poetry": [
     {
-      "name": "Poetry",
+      "name": "Poems",
       "posts": [
         "poetry/palavras.md",
         "poetry/vivo_ou_morto.md",
-        "poetry/ate_la.md"
+        "poetry/ate_la.md",
+        "poetry/perfeita_inspiração.md"
       ]
     }
   ]

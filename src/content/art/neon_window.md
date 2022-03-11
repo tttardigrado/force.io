@@ -1,12 +1,12 @@
 # Neon Window
 
-A **window** to another world where **neon** is the normal.
+Uma **janela** para outro mundo, onde o **neon** é a norma.
 
-This piece of art was created as a experiment on simplicity.
+Este projeto foi criado como um *"estudo sobre simplicidade"*, de modo a tentar fazer algo bonito com pouco e conseguir explicar o meu processo na criação de **arte generativa** a um amigo. 
 
-* **Language**: *JavaScript*
-* **Libraries**: *P5.js* <sup>[1]</sup>
-* **Color Schemes**: *Nord*, *Gruvbox*, *Dracula*
+* **Linguagem**: *JavaScript*
+* **Bibliotecas**: *P5.js* <sup>[1]</sup>
+* **Esquemas de Cores**: *Nord*, *Gruvbox*, *Dracula*
 
 ----------
 

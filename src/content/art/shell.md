@@ -1,9 +1,9 @@
 # 🐚 Shell
 
-**Shell** is a piece of generative art that i made while trying *sizecoding* <sup>[1]</sup> (actually it's more like twitter coding <sup>[2]</sup>)
+**Shell**, uma tentativa falhada de *sizecoding* <sup>[1]</sup> que acabou por ficar bonito e caber num tweet.
 
-* **Language**: *JavaScript*
-* **Libraries**: *P5.js* <sup>[3]</sup>
+* **Linguagem**: *JavaScript*
+* **Bibliotecas**: *P5.js* <sup>[2]</sup>
 
 -----
 
@@ -69,7 +69,5 @@ function setup(){
 <br>
 
 *[1]*: [Size Coding](http://www.sizecoding.org/wiki/Main_Page)
-
-*[2]*: Writing code snippets that fit inside twitter's character limit (280)
 
 *[3]*: [P5.js](https://p5js.org/)

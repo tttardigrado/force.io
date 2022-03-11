@@ -1,9 +1,9 @@
 # 👁️ Focus
 
-**Focus** is a generative art piece influenced and inspired by the video *"Feynman's lost lecture"* <sup>[1]</sup> by *Minutephysics* <sup>[2]</sup> and *3Blue1Brown* <sup>[3]</sup>
+**Focus** é um projeto de arte generativa inspirado no vídeo: *"Feynman's lost lecture"* <sup>[1]</sup> de *Minutephysics* <sup>[2]</sup> e *3Blue1Brown* <sup>[3]</sup>
 
-* **Language**: *JavaScript*
-* **Libraries**: *P5.js* <sup>[4]</sup>
+* **Linguagem**: *JavaScript*
+* **Bibliotecas**: *P5.js* <sup>[4]</sup>
 
 -----
 
@@ -35,12 +35,12 @@
 
 *[1]*: [Feynman's lost lecture](https://www.youtube.com/watch?v=xdIjYBtnvZU&t=387s)
 
-*[2.1]*: [Minutephysics Website](https://www.minutephysics.com/)
+*[2.1]*: [Website Minutephysics](https://www.minutephysics.com/)
 
-*[2.2]*: [Minutephysics's Youtube Channel](https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg)
+*[2.2]*: [Youtube Minutephysics](https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg)
 
-*[3.1]*: [3Blue1Brown's Website](https://www.3blue1brown.com/)
+*[3.1]*: [Website 3Blue1Brown](https://www.3blue1brown.com/)
 
-*[3.2]*: [3Blue1Brow's Youtube Channel](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+*[3.2]*: [Youtube 3Blue1Brow](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
 
 *[4]*: [P5.js](https://p5js.org/)

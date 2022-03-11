@@ -1,7 +1,7 @@
 import json
 import shutil
 import os
-from mdit_py_plugins import footnote, tasklists, texmath, anchors
+from mdit_py_plugins import footnote, tasklists, texmath, anchors 
 from markdown_it import MarkdownIt
 from pathlib import Path
 import templates
@@ -177,12 +177,12 @@ def process_config(config: dict) -> str:
 
         for value in config[key]:
             episodes: list = process_series(value)
-            html += f"<li><details><summary>{value['name'].capitalize()}</summary>"
+            html += f"<li>"
 
             for ep in episodes:
                 html += f"<li><a href='{os.path.join('./content', ep)+'.html'}'>{ep.capitalize()}</a></li>"
 
-            html += "</details></li>"
+            html += "</li>"
 
         html += "</details></li>"
 
