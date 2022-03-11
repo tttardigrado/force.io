@@ -33,7 +33,7 @@ def index_template(posts: str) -> str:
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/lifeline.css">
     <link rel="stylesheet" href="styles/topbar.css">
-    <title>Force</title>
+    <title>🪐 Tardigrade</title>
 </head>
 <body>
     <div class="top">
