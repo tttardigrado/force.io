@@ -35,6 +35,20 @@
         "poetry/perfeita_inspiração.md"
       ]
     }
+  ],
+  "Esostack": [
+    {
+      "name": "es",
+      "posts": [
+        "esostack/operators.md",
+        "esostack/functions.md",
+        "esostack/control_flow.md",
+        "esostack/types_and_const.md",
+        "esostack/cli.md",
+        "esostack/structure.md",
+        "esostack/examples.md"
+      ]
+    }
   ]
 
 }

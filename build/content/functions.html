@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/post.css">
+    <link rel="stylesheet" href="/styles/lifeline.css">
+    <link rel="stylesheet" href="/styles/topbar.css">
+    <title>Functions</title>
+    <base target="_blank">
+</head>
+<body>
+    <div class="top">
+        <div class="top-txt" ><a href="/index.html" target="_self">Force</a></div>
+        <div class="top-bar">
+            <span class="top-btn min"></span>
+            <span class="top-btn max"></span>
+            <span class="top-btn close"></span>
+        </div>
+    </div>
+    <main>
+        <h1 id="functions">Functions</h1>
+<hr />
+<br>
+<h2 id="stack">Stack</h2>
+<h3>Swap</h3>
+<p><em>Descirption:</em> Swap the order of the first 2 elements</p>
+<p><em>Args:</em> 2</p>
+<p><em>Tokens:</em> swap</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|a|b|
+</code></pre>
+<br>
+<h3>Dup</h3>
+<p><em>Descirption:</em> Duplicate the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> dup</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|b|a|a|
+</code></pre>
+<br>
+<h3>Dup2</h3>
+<p><em>Descirption:</em> Duplicate the top 2 elements</p>
+<p><em>Args:</em> 2</p>
+<p><em>Tokens:</em> dup2</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|b|a|b|a|
+</code></pre>
+<br>
+<h3>Duplicate</h3>
+<p><em>Descirption:</em> Duplicate the whole stack</p>
+<p><em>Args:</em> 0</p>
+<p><em>Tokens:</em> duplicate</p>
+<p><em>Example:</em></p>
+<pre><code>|c|...|b|a| -&gt; |c|...|b|a|c|...|b|a
+</code></pre>
+<br>
+<h3>Drop</h3>
+<p><em>Descirption:</em> Remove the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> drop</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|b|
+</code></pre>
+<br>
+<h3>Over</h3>
+<p><em>Descirption:</em> Copy the second element to the top</p>
+<p><em>Args:</em> 2</p>
+<p><em>Tokens:</em> over</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|b|a|b|
+</code></pre>
+<br>
+<h3>Rot</h3>
+<p><em>Descirption:</em> Rotate the top 3 elements</p>
+<p><em>Args:</em> 3</p>
+<p><em>Tokens:</em> rot</p>
+<p><em>Example:</em></p>
+<pre><code>|...|c|b|a| -&gt; |...|b|a|c|
+</code></pre>
+<br>
+<h3>Size</h3>
+<p><em>Descirption:</em> Push the size of the stack to itself</p>
+<p><em>Args:</em> 0</p>
+<p><em>Tokens:</em> size</p>
+<p><em>Example:</em></p>
+<pre><code>|c|b|a| -&gt; |c|b|a|3|
+| |     -&gt; |0|
+</code></pre>
+<br>
+<hr />
+<br>
+<h2 id="math">Math</h2>
+<h3>Square Root</h3>
+<p><em>Descirption:</em> Get the Square Root of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Error:</em> x can't be negative</p>
+<p><em>Tokens:</em> √x, sqrt</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|√a|
+</code></pre>
+<br>
+<h3>Factorial</h3>
+<p><em>Descirption:</em> Get the factorial of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> x!, fact</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|a!|
+</code></pre>
+<br>
+<h3>Exponential</h3>
+<p><em>Descirption:</em> Get the exponential of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> exp</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|exp(a)|
+</code></pre>
+<br>
+<h3>Natural Logarithm</h3>
+<p><em>Descirption:</em> Get the Natural Logarithm of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Error:</em> x can't be 0 or negative</p>
+<p><em>Tokens:</em> log</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|log(a)|
+</code></pre>
+<br>
+<h3>Sine</h3>
+<p><em>Descirption:</em> Get the Sine of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> sin</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|sin(a)|
+</code></pre>
+<br>
+<h3>Cosine</h3>
+<p><em>Descirption:</em> Get the Cosine of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> cos</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|cos(a)|
+</code></pre>
+<br>
+<h3>Tangent</h3>
+<p><em>Descirption:</em> Get the Tangent of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> tan</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|tan(a)|
+</code></pre>
+<br>
+<h3>Maximum</h3>
+<p><em>Descirption:</em> Get the Maximum of the top 2 elements</p>
+<p><em>Args:</em> 2</p>
+<p><em>Tokens:</em> ↑, max</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|max(a,b)|
+</code></pre>
+<br>
+<h3>Minimum</h3>
+<p><em>Descirption:</em> Get the Minimum of the top 2 elements</p>
+<p><em>Args:</em> 2</p>
+<p><em>Tokens:</em> ↓, min</p>
+<p><em>Example:</em></p>
+<pre><code>|...|b|a| -&gt; |...|min(a,b)|
+</code></pre>
+<br>
+<h3>Simetric</h3>
+<p><em>Descirption:</em> Get the Simetric of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> -x, sim</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|-a|
+</code></pre>
+<br>
+<h3>Floor</h3>
+<p><em>Descirption:</em> Get the largest integer before the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> ⌊x⌋, floor</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|⌊a⌋|
+</code></pre>
+<br>
+<h3>Ceil</h3>
+<p><em>Descirption:</em> Get the smallest integer after the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> ⌈x⌉, ceil</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...|⌈a⌉|
+</code></pre>
+<br>
+<h3>Absolute Value</h3>
+<p><em>Descirption:</em> Get the Absolute Value of the top element</p>
+<p><em>Args:</em> 1</p>
+<p><em>Tokens:</em> |x|, abs</p>
+<p><em>Example:</em></p>
+<pre><code>|...|a| -&gt; |...| |a| |
+</code></pre>
+
+    </main>
+
+    <div class="life-line">
+        <div class="line">
+            <span class="life-line-start">
+                <span class="life-line-color">█</span>
+                Functions.vim
+            </span>
+
+        </div>
+    </div>
+</body>
+</html>

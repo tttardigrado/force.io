@@ -149,7 +149,7 @@ pre::before {
 }
 
 
-img {
+img, iframe {
     width: 80%;
     border: 0.35rem solid var(--pink);
     margin: 1rem 10%;
