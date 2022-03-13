@@ -155,6 +155,11 @@ img, iframe {
     margin: 1rem 10%;
 }
 
+iframe {
+    width: 100%;
+    margin: 1rem 0;
+}
+
 
 hr {
     width: 100%;

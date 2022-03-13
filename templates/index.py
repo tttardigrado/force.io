@@ -75,7 +75,7 @@ def index_template(posts: str) -> str:
     <div class="life-line">
         <div class="line">
             <span class="life-line-start">
-                <span class="life-line-color">█</span>
+                <span class="life-line-color"></span>
                 tardigrade.py
             </span>
         </div>
