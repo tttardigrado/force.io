@@ -28,4 +28,23 @@ The **For** statement allows you to execute the same block of code multiple time
 <br>
 
 # User Functions
-* TODO
+
+The main file isn't an EsoStack file. The main file works as a sequence of functions to be executed.
+
+```
+test1
+
+fun2
+
+func3
+```
+
+As an example, this file would be interpreted in the following way:
+* Initialize a stack (always happens at the beggining)
+* Try to run the *test1* function
+* Blank lines are ignored
+* Try to run the *fun2* function
+* Blank lines are ignored
+* Try to run the *func3* function
+
+If an error occurs or a function is not found inside the *funcs* folder, the program will halt

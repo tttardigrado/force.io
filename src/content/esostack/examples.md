@@ -32,3 +32,24 @@ for {
 <br>
 
 -----
+
+<br>
+
+## Factorial
+*Description:* Get the factorial of N
+
+*Code:*
+```
+N 0 swap for {
+    1 + dup
+}
+
+1 swap - for {
+    *
+}
+
+```
+
+<br>
+
+-----

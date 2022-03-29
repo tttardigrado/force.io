@@ -24,7 +24,7 @@
 
 *Args:* 2
 
-*Example:*
+*Example:* -
 ```
 |...|b|a| -> |...|a - b|
 ```

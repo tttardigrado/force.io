@@ -39,9 +39,23 @@
 <p>The <strong>For</strong> statement allows you to execute the same block of code multiple times. It drops the top element of the stack and executes the <strong>body-block</strong> that number of times.</p>
 <br>
 <h1 id="user-functions">User Functions</h1>
+<p>The main file isn't an EsoStack file. The main file works as a sequence of functions to be executed.</p>
+<pre><code>test1
+
+fun2
+
+func3
+</code></pre>
+<p>As an example, this file would be interpreted in the following way:</p>
 <ul>
-<li>TODO</li>
+<li>Initialize a stack (always happens at the beggining)</li>
+<li>Try to run the <em>test1</em> function</li>
+<li>Blank lines are ignored</li>
+<li>Try to run the <em>fun2</em> function</li>
+<li>Blank lines are ignored</li>
+<li>Try to run the <em>func3</em> function</li>
 </ul>
+<p>If an error occurs or a function is not found inside the <em>funcs</em> folder, the program will halt</p>
 
     </main>
 
@@ -49,7 +63,7 @@
         <div class="line">
             <span class="life-line-start">
                 <span class="life-line-color"></span>
-                Control_flow.rs
+                Control_flow.js
             </span>
 
         </div>
