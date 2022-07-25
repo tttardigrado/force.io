@@ -1,50 +1,53 @@
 # Examples
------
+
+---
 
 <br>
 
 ## AllEqual
-*Description:* Check if all elements are equal
 
-*Code:*
+_Description:_ Check if all elements are equal
+
+_Code:_
+
 ```
-duplicate 2 2 size / - 
-for { 
-    max 
+(get the maximum of the stack)
+duplicate 2 2 size / -
+for {
+    max
 }
 
-duplicate 2 2 size / - 
-for { 
-    min 
+(get the minimum of the stack)
+duplicate 2 2 size / -
+for {
+    min
 }
 
+(compare them)
 ==
 ```
 
 <br>
 
------
-
-<br>
-
-<iframe width="100%" height="420" src="https://www.youtube.com/embed/hYUonqzc5GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
------
-
-<br>
-
 ## Factorial
-*Description:* Get the factorial of N
 
-*Code:*
+_Description:_ Get the factorial of N
+
+_Code:_
+
 ```
+(generate a list like:
+    1 2 ... N N)
 N 0 swap for {
     1 + dup
 }
 
-1 swap - for {
+(turn the list into
+    1 2 ... N [N-1])
+1 swap -
+
+(multiply to get the factorial)
+for {
     *
 }
 
@@ -52,4 +55,4 @@ N 0 swap for {
 
 <br>
 
------
+---

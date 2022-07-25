@@ -1,7 +1,7 @@
 import json
 import shutil
 import os
-from mdit_py_plugins import footnote, tasklists, texmath, anchors 
+from mdit_py_plugins import footnote, tasklists, texmath, anchors
 from markdown_it import MarkdownIt
 from pathlib import Path
 import templates
@@ -37,10 +37,9 @@ file_extensions: list = [
     "hs",
     "lua",
     "vim",
-    "emacs",
+    "lisp",
+    "rkt",
     "jl",
-    "pd",
-    "rs",
     "sh",
 ]
 

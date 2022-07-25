@@ -27,33 +27,37 @@
 <h2 id="allequal">AllEqual</h2>
 <p><em>Description:</em> Check if all elements are equal</p>
 <p><em>Code:</em></p>
-<pre><code>duplicate 2 2 size / - 
-for { 
-    max 
+<pre><code>(get the maximum of the stack)
+duplicate 2 2 size / -
+for {
+    max
 }
 
-duplicate 2 2 size / - 
-for { 
-    min 
+(get the minimum of the stack)
+duplicate 2 2 size / -
+for {
+    min
 }
 
+(compare them)
 ==
 </code></pre>
-<br>
-<hr />
-<br>
-<iframe width="100%" height="420" src="https://www.youtube.com/embed/hYUonqzc5GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<hr />
 <br>
 <h2 id="factorial">Factorial</h2>
 <p><em>Description:</em> Get the factorial of N</p>
 <p><em>Code:</em></p>
-<pre><code>N 0 swap for {
+<pre><code>(generate a list like:
+    1 2 ... N N)
+N 0 swap for {
     1 + dup
 }
 
-1 swap - for {
+(turn the list into
+    1 2 ... N [N-1])
+1 swap -
+
+(multiply to get the factorial)
+for {
     *
 }
 
@@ -67,7 +71,7 @@ for {
         <div class="line">
             <span class="life-line-start">
                 <span class="life-line-color"></span>
-                Examples.go
+                Examples.py
             </span>
 
         </div>

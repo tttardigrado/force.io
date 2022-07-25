@@ -48,15 +48,15 @@ def index_template(posts: str) -> str:
     <img class="bg-img" src="assets/bg.png">
 
     <main>
-        <h1>Tardigrade's World</h1>
+        <h1>Tardigrado's World</h1>
         <hr>
         <h2>Who Am I?</h2>
         <div class="who">
-            <p>Hi! 🖖</p>
-            <p>My name is <em>Gonçalo Teixeira</em>, also known around the corners of the web as <strong>Tardigrade</strong> </p>
-            <p>I'm a Portuguese <strong>🪐 physics</strong> student at <em>Universidade do Porto</em></p>
+            <p>Hey Hey! 🖖</p>
+            <p>My name is <em>Gonçalo Teixeira</em>, also known around the corners of the web as <strong>Tardigrado</strong> </p>
+            <p>I'm a Portuguese <strong>🪐 Computer Science</strong> student at <em>Universidade do Porto</em></p>
             <p>This is my personal website where you will be able to find a lot of posts about what I enjoy doing.</p>
-            <p>My interests range from <strong>💻 Computer Science</strong>, <strong>🎶 Music</strong>, <strong>🪐 Sci-fi</strong> and <strong>📚 Debates</strong></p>
+            <p>My interests are <strong>💻 Computer Science</strong>(EsoLangs, Generative art and Celular Automata), <strong>🎶 Music</strong>, <strong>🪐 Sci-fi</strong> and <strong>📚 Debates</strong></p>
 
         </div>
         <hr>
