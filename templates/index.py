@@ -56,7 +56,7 @@ def index_template(posts: str) -> str:
             <p>My name is <em>Gonçalo Teixeira</em>, also known around the corners of the web as <strong>Tardigrado</strong> </p>
             <p>I'm a Portuguese <strong>🪐 Computer Science</strong> student at <em>Universidade do Porto</em></p>
             <p>This is my personal website where you will be able to find a lot of posts about what I enjoy doing.</p>
-            <p>My interests are <strong>💻 Computer Science</strong>(EsoLangs, Generative art and Celular Automata), <strong>🎶 Music</strong>, <strong>🪐 Sci-fi</strong> and <strong>📚 Debates</strong></p>
+            <p>My interests are <strong>💻 Computer Science</strong>, <strong>🎶 Music</strong>, <strong>🪐 Sci-fi</strong> and <strong>📚 Debates</strong></p>
 
         </div>
         <hr>
@@ -69,6 +69,7 @@ def index_template(posts: str) -> str:
         <p><a href="https://www.instagram.com/_tardigrado_/" target="_blank"> 📷 Instagram</a></p>
         <p><a href="https://soundcloud.com/g-force-beats" target="_blank"> 🎶 SoundCloud</a></p>
         <p><a href="https://github.com/Force4760" target="_blank"> 💻 GitHub</a></p>
+        <p><a href="https://drive.google.com/file/d/1XHuASNrws0ZRebCYrbahGgTK0BZfAauY/view?usp=sharing" target="_blank">✏️  CV</a></p>
         <hr>
     </main>
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/post.css">
+    <link rel="stylesheet" href="/styles/lifeline.css">
+    <link rel="stylesheet" href="/styles/topbar.css">
+    <title>🪐 Pysv</title>
+    <base target="_blank">
+</head>
+<body>
+    <div class="top">
+        <div class="top-txt" ><a href="/index.html" target="_self">Tardigrade</a></div>
+        <div class="top-bar">
+            <span class="top-btn min"></span>
+            <span class="top-btn max"></span>
+            <span class="top-btn close"></span>
+        </div>
+    </div>
+    <main>
+        <h1 id="pysv">PYSV</h1>
+<p>A TUI python app for reading, writing and editing CSV files without leaving your terminal</p>
+<ul>
+<li><a href="https://github.com/Force4760/pysv">GitHub</a></li>
+</ul>
+<h2 id="tech-stack">Tech Stack</h2>
+<ul>
+<li>
+<p>Languages:</p>
+<ul>
+<li><strong>Python</strong></li>
+</ul>
+</li>
+<li>
+<p>Modules:</p>
+<ul>
+<li><strong>click</strong> - for command line flags parsing</li>
+<li><strong>csv</strong> - for CSV file parsing</li>
+<li><strong>prompt_toolkit</strong> - for generating the prompt and the TUI elements</li>
+<li><strong>dataclasses</strong> - to faccilitate the creation of classes using python</li>
+<li><strong>pyperclip</strong> - to interface with the system's clipboard</li>
+<li><strong>json</strong> - for JSON file parsing (used for config files)</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>
+<p><strong>load, ld:</strong> Load a new csv file into memory</p>
+<ul>
+<li>
+<p><code>load «path_to_file|named_file»</code></p>
+</li>
+<li>
+<p><code>ld «path_to_file|named_file»</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>save, sv:</strong> Save the currently loaded csv to a file</p>
+<ul>
+<li>
+<p><code>save «path_to_file|NONE»</code></p>
+</li>
+<li>
+<p><code>sv «path_to_file|NONE»</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>peek:</strong> show a single column or row</p>
+<ul>
+<li><code>peek «column|row» «name»</code></li>
+</ul>
+</li>
+<li>
+<p><strong>ls:</strong> show the names of all column, rows or both</p>
+<ul>
+<li><code>ls «column|row|NONE»</code></li>
+</ul>
+</li>
+<li>
+<p><strong>delete, del:</strong> delete all the values on a specified column or row</p>
+<ul>
+<li>
+<p><code>delete «column|row» «name»</code></p>
+</li>
+<li>
+<p><code>del «column|row» «name»</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>cell:</strong> show the value of a specified cell</p>
+<ul>
+<li><code>cell «column_name» «row_name»</code></li>
+</ul>
+</li>
+<li>
+<p><strong>copy, cp:</strong> copy to the clipboard the contents of a specified cell</p>
+<ul>
+<li>
+<p><code>copy «column_name» «row_name»</code></p>
+</li>
+<li>
+<p><code>cp «column_name» «row_name»</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>switch, sw:</strong> switch the values between two tables or two rows</p>
+<ul>
+<li>
+<p><code>switch «column|row» «name_1» | «name_2»</code></p>
+</li>
+<li>
+<p><code>sw «column|row» «name_1» | «name_2»</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>edit:</strong> edit the content of a specified cell</p>
+<ul>
+<li><code>edit «column_name» «row_name»</code></li>
+</ul>
+</li>
+<li>
+<p><strong>replace:</strong> replace the content of a specified cell</p>
+<ul>
+<li><code>replace «column_name» «row_name»</code></li>
+</ul>
+</li>
+<li>
+<p><strong>show, s:</strong> show the current csv file as an html table inside a browser</p>
+</li>
+<li>
+<p><strong>help, h:</strong> show this message</p>
+</li>
+<li>
+<p><strong>clear, cls, c:</strong> clear the screen</p>
+</li>
+</ul>
+<h2 id="color-schemes">Color Schemes</h2>
+<ul>
+<li>Nord</li>
+<li>Gruvbox</li>
+<li>Dracula</li>
+<li>Monokai</li>
+<li>Palenight</li>
+</ul>
+
+    </main>
+
+    <div class="life-line">
+        <div class="line">
+            <span class="life-line-start">
+                <span class="life-line-color"></span>
+                Pysv.vim
+            </span>
+
+        </div>
+    </div>
+</body>
+</html>

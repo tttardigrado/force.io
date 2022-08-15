@@ -22,7 +22,115 @@
     </div>
     <main>
         <h1 id="mixtape">MixTape</h1>
-<h2 id="todo-2">TODO</h2>
+<p>The love child of <strong>Befunge</strong> and <strong>Brainfuck</strong>.</p>
+<h1 id="documentation">Documentation</h1>
+<p><strong>MixTape</strong> (MT) is a new <strong>esoteric programming language</strong> (EsoLang) that is composed of a <strong>Grid</strong> and a <strong>Tape</strong> similar to Befunge’s and Brainfuck’s respectively.</p>
+<p>You might be asking: “Why another language?”. Oh sweet summer child, do you think I need any reason to create a new dumb language? I just want to have fun.</p>
+<h2 id="the-tape">The Tape</h2>
+<p>After all what the hell is a <strong>Tape</strong>? A tape is just a 1-dimension collection of cells that can be manipulated.</p>
+<pre><code>+———+———+———+———+———+———+———+———+ . . .
+│ 0 │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ . . .
++———+———+———+———+———+———+———+———+ . . .
+              ^
+</code></pre>
+<p>Each <strong>Cell</strong> is a byte that can hold values from <strong>0</strong> to <strong>255</strong>. The Tape is made of <strong>256</strong> cells and a <strong>Head</strong> that points to the current cell.</p>
+<h2 id="the-grid">The Grid</h2>
+<p>A <strong>Grid</strong> is a 2-dimension 256x256 collection of characters that compose your program. Each character is assigned to a given operation that either manipulates the grid itself or the tape.</p>
+<p>The Grid also has a <strong>pointer</strong> that stores the current coordinate of the program. It starts at the top-left <strong>(0,0)</strong> and starts moving to the right. If this pointer moves out of the grid borders it will wrap around.</p>
+<h2 id="manipulation-of-the-tape">Manipulation of the Tape</h2>
+<p>The first thing we can manipulate is the <strong>Head</strong>.  If you want to move the head to the <strong>left</strong>, use <em>{</em> and if you want to move it to the right use +}*.</p>
+<p>The head wraps around, i.e. if you try to move left at index 0 it moves to index 255 and if you try to move right at index 255 it moves to index 0.</p>
+<p>The second thing we can manipulate are the cells themselves. There are 4 kinds of operations that you can use on them: <strong>Increment</strong>, <strong>Decrement</strong>, <strong>Set</strong> and <strong>Read</strong>.</p>
+<p>You can use the <em>+</em> command to <strong>Increment</strong> and <em>-</em> to <strong>Decrement</strong> the given cell. Both operations wrap in a similar way to the tape’s head movement.</p>
+<p><strong>Setting</strong> is a bit more interesting since there are several ways to do it:</p>
+<ul>
+<li><em>0</em> Sets the cell to 0.</li>
+<li>Any letter character (from <em>A</em> to <em>z</em>) will set the cell to it’s corresponding ASCII values (ex: <em>A</em> is 65).</li>
+<li><em>?</em> will set the cell to a random value between 0 and 255.</li>
+<li><em>'</em> will ask the user for a character and set the cell to it’s ASCII value.</li>
+<li><em>=</em> will ask the user for an integer and set the cell to it’s value (mod 255)</li>
+</ul>
+<p><strong>Reading</strong> is also an interesting operation:</p>
+<ul>
+<li><em>$</em> Reads the value of the current cell, converts it to ASCII and prints it.</li>
+<li><em>#</em> Reads the value of the current cell, prints it without converting it to a ASCII (it prints an integer).</li>
+<li><em>@</em> Reads the value of the current cell and moves the head to the corresponding cell (ex: if the value is 10, the head will be moved to index 10).</li>
+</ul>
+<h2 id="manipulation-of-the-grid">Manipulation of the Grid</h2>
+<p>The <strong>Pointer</strong> moves, but there are several ways to manipulate it’s movement.</p>
+<ul>
+<li><em>&gt;</em> Sets the movement direction to <strong>Right</strong>.</li>
+<li><em>&lt;</em> Sets the movement direction to <strong>Left</strong>.</li>
+<li><em>^</em> Sets the movement direction to <strong>Up</strong>.</li>
+<li><em>v</em> Sets the movement direction to <strong>Down</strong>.</li>
+</ul>
+<p>There are two conditional movement operators. They look at the value of the current cell and move to a different direction according to the value</p>
+<ul>
+<li><em>|</em> If the value is 0, sets the direction to <strong>Up</strong>, otherwise sets it to <strong>Down</strong>.</li>
+<li><em>_</em> If the value is 0, sets the direction to <strong>Left</strong>, otherwise sets it to <strong>Right</strong>.</li>
+</ul>
+<p>Sometimes, we might want want to ignore certain characters and just jump to the next one. The <em>~</em> command does exactly that. If the pointer finds this command, it will keep moving in the same direction, but ignore the command after <em>~</em></p>
+<p>The last way to manipulate the grid is to move it’s pointer to a specific place. This can be achieved with the <em>&amp;</em> operator that sets <strong>x</strong> to the value of the current cell and <strong>y</strong> to the value of the next cell</p>
+<h2 id="strings">Strings</h2>
+<p>Esolangs are famous for being hard to write and output strings (hello world programs become super interesting once you enter the esolangs world). Since Mixtape is somewhat a Befunge clone, I wanted to add some <strong>String mode</strong> like the on found on Befunge.</p>
+<p>The string mode can be started and ended with the <em>”</em> command. Every character found between an opening and closing <em>”</em> will be interpreted as a string character and stored on the tape.</p>
+<p>Let’s see an example to make the concept easier to understand:<em>“ABCD”</em>. Every character in this string will be converted to it’s ASCII representation, the current cell will be set to that value and the head will move right.</p>
+<pre><code>                           A   B   C   D
++—-—+—-—+—-—+—-—+—-—+    +—-—+—-—+—-—+—-—+—-—+
+| 0 | 0 | 0 | 0 | 0 | -&gt; | 65| 66| 67| 68| 0 |
++—-—+—-—+—-—+—-—+—-—+    +—-—+—-—+—-—+—-—+—-—+
+  ^                                        ^
+</code></pre>
+<h2 id="resetting-and-ending-the-program">Resetting And Ending the program</h2>
+<p>There are two reset commands: <em>:</em> and <em>.</em></p>
+<ul>
+<li><em>:</em> resets the grid, setting the pointer coordinates to (0,0)</li>
+<li><em>.</em> resets the tape, setting the head and every cell to 0</li>
+</ul>
+<p>A nice mnemonic for this is that the grid is 2D and <em>:</em> has 2 dots, while the tape is 1D and <em>.</em> has 1 dot.</p>
+<p>The program ends when it reaches a <em>!</em>. If it is the first character it will imediatamente stop and do nothing (not a very useful program if you ask me). If the program never reaches <em>!</em>, it will loop for ever (well, at least until you get bored and close the terminal)</p>
+<h2 id="cheat-sheet">Cheat Sheet</h2>
+<ul>
+<li>Grid
+<ul>
+<li><em>&gt;</em> Right</li>
+<li><em>&lt;</em> Left</li>
+<li><em>^</em> Up</li>
+<li><em>v</em> Down</li>
+<li><em>_</em> Left / Right</li>
+<li><em>|</em> Up / Down</li>
+<li><em>~</em> Ignore</li>
+<li><em>&amp;</em> Go to (x, y)</li>
+<li><em>”</em> Start/End the string mode</li>
+</ul>
+</li>
+<li>Tape
+<ul>
+<li><em>{</em> Head Left</li>
+<li><em>}</em> Head Right</li>
+<li><em>+</em> Cell Up</li>
+<li><em>-</em> Cell Down</li>
+<li><em>?</em> Cell Random</li>
+<li><em>’</em> Get character from input</li>
+<li><em>=</em> Get integer from input</li>
+<li><em>$</em> Print cell as ASCII</li>
+<li><em>#</em> Print cell as integer</li>
+<li><em>@</em> Head to x</li>
+<li><em>0</em> Cell becomes 0</li>
+<li><em>1-9</em> Repeat the last tape operation x times</li>
+</ul>
+</li>
+<li>Resetting and Ending
+<ul>
+<li><em>:</em> Reset the Grid</li>
+<li><em>.</em> Reset the Tape</li>
+<li><em>!</em> End the program</li>
+</ul>
+</li>
+</ul>
+<h2 id="final-notes">Final Notes</h2>
+<p>Any unrecognised characters inside the grid will throw an error. This means that you shouldn’t use them, unless you like errors for some weird reason.</p>
+<p>Suggestions and contributions are appreciated. If you have an idea, want to help with documentation or implementation, found a bug or anything else, please open a pull request, an issue or message me on twitter or instagram.</p>
 
     </main>
 
@@ -30,7 +138,7 @@
         <div class="line">
             <span class="life-line-start">
                 <span class="life-line-color"></span>
-                Mixtape.js
+                Mixtape.c
             </span>
 
         </div>
